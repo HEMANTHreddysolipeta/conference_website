@@ -1,0 +1,22 @@
+# Node / build
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# System
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+
+# Misc
+.idea/

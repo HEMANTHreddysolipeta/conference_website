@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" role="img" aria-label="Conference logo">
+  <rect width="320" height="160" rx="20" fill="#F8FAFC"/>
+  <circle cx="98" cy="80" r="38" fill="#10B981"/>
+  <path d="M98 48c-18 0-32 14-32 32 0 18 14 32 32 32 18 0 32-14 32-32 0-18-14-32-32-32zm0 12c11 0 20 9 20 20 0 11-9 20-20 20-11 0-20-9-20-20 0-11 9-20 20-20z" fill="#FFFFFF"/>
+  <path d="M162 54h24l20 54 20-54h24l-32 78h-24z" fill="#0F172A"/>
+</svg>
