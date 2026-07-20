@@ -82,30 +82,83 @@ box-shadow:0 18px 40px rgba(15,118,110,.12);
 </style>
 
 </head>
-<body class="bg-white text-slate-800">
+<body class="bg-white text-slate-800" style="margin-top: 70px;">
 
-  <div id="navbar">
+  <!-- Inline Navbar -->
+  <nav>
+
+    <a href="index.html#hero" class="nav-brand">
+        <img src="images/logo1.png" class="nav-logo">
+
+     <div class="nav-brand-text">
+
+        <h2>ICASIS</h2>
+
+        <span>International Conference</span>
+
+        </div>
+
+    </a>
+     <ul class="nav-links">
+
+        <li><a href="index.html#about">About</a></li>
+
+        <li><a href="index.html#call">Tracks</a></li>
+
+        <li><a href="index.html#committee">Committee</a></li>
+
+        <li><a href="speakers.html">Speakers</a></li>
+
+        <li><a href="index.html#dates">Schedule</a></li>
+
+        <li class="dropdown">
+            <a href="#venue">
+                Venue
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a href="index.html#venue">Venue</a></li>
+                <li><a href="index.html#explore">Explore Hyderabad</a></li>
+                <li><a href="travel.html">How to Reach</a></li>
+            </ul>
+        </li>
+
+        <li><a href="index.html#contact">Contact</a></li>
+
+     </ul>
+
+        <div class="menu-toggle" id="menuToggle">
+              ☰
+        </div>
+
+        </nav>
 
   <script>
-fetch("navbar.html")
-.then(response => response.text())
-.then(data => {
+  // Mobile Menu Toggle
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.querySelector(".nav-links");
 
-    document.getElementById("navbar").innerHTML = data;
+  if(menuToggle && navLinks){
+      menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+      });
+  }
 
-    // Mobile Menu
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.querySelector(".nav-links");
-
-    if(menuToggle && navLinks){
-        menuToggle.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
-    }
-
-});
-</script>
-  </div>
+  // Dropdown hover
+  document.querySelectorAll(".dropdown").forEach(dropdown => {
+      let timer;
+      dropdown.addEventListener("mouseenter", () => {
+          clearTimeout(timer);
+          dropdown.classList.add("open");
+      });
+      dropdown.addEventListener("mouseleave", () => {
+          timer = setTimeout(() => {
+              dropdown.classList.remove("open");
+          },250);
+      });
+  });
+  </script>
 <!-- ================= HERO ================= -->
 
 <section
