@@ -6,68 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css?v=2">
+
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
+    
 
 <nav>
-    <div class="logo">ICASIS 2027</div>
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#tracks">Tracks</a>
-        <a href="#dates">Dates</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
 
-<section class="hero">
+    <a href="#hero" class="nav-brand">
+        <img src="images/logo1.png" class="nav-logo">
 
-    <div class="hero-overlay"></div>
+     <div class="nav-brand-text">
 
-    <div class="hero-content">
+        <h2>ICASIS</h2>
 
-        <div class="hero-logos">
+        <span>International Conference</span>
 
-            <img src="images/bvrit-logo.svg" alt="BVRIT">
-
-            <img src="images/conference-logo.svg" alt="Conference">
+     
 
         </div>
 
+    </a>
+     <ul class="nav-links">
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#call">Tracks</a></li>
+
+        <li><a href="#committee">Committee</a></li>
+
+        <li><a href="speakers.html">Speakers</a></li>
+
+        <li><a href="#dates">Schedule</a></li>
+
+        <li class="dropdown">
+            <a href="#venue">
+                Venue
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a href="#venue">Venue</a></li>
+                <li><a href="#explore">Explore Hyderabad</a></li>
+                <li><a href="travel.html">How to Reach</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
+
+     </ul>
+
+        <div class="menu-toggle" id="menuToggle">
+              ☰
+        </div>
+
+        </nav>
+
+
+
+       <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+
+    
+    
+       <div class="hero-content">
+
+        <div class="hero-top">
+        <div class="hero-branding">
+            <div class="hero-person">
+                <img src="images/bvraju.jpg" alt="BV Raju">
+            </div>
+
+            <div class="hero-logo bvrit-logo">
+                <img src="images/BVRITN.png" alt="BVRIT logo">
+            </div>
+
+            <div class="hero-logo conference-logo">
+                <img src="images/con.png" alt="ICASIS conference logo">
+            </div>
+        </div>
+      </div>
         <h1>
             International Conference on AI-powered Systems for Innovation and Sustainability
         </h1>
 
 
-        <p>on 26-27 February 2027</p>
+        <p>on 30-31 March 2027</p>
 
-        <div class="countdown">
+        
+    
 
-    <div class="time-box">
-        <span id="days">00</span>
-        <small>Days</small>
-    </div>
+      <div class="countdown">
+             <div class="time-box">
+               <span id="days">00</span>
+              <small>Days</small>
+                </div>
 
-    <div class="time-box">
+     <div class="time-box">
         <span id="hours">00</span>
         <small>Hours</small>
-    </div>
+        </div>
 
-    <div class="time-box">
+     <div class="time-box">
         <span id="minutes">00</span>
         <small>Minutes</small>
-    </div>
+     </div>
 
-    <div class="time-box">
+     <div class="time-box">
         <span id="seconds">00</span>
         <small>Seconds</small>
-    </div>
+     </div>
+     
 
-</div>
+     </div>
 
         <div class="buttons">
 
@@ -81,7 +139,8 @@
 
         </div>
 
-    </div>
+    </a>
+ 
 
 </section>
 
@@ -106,6 +165,21 @@
                     <h3>B V Raju Institute of Technology</h3>
                     <p class="preview">Established in 1997 under Sri Vishnu Educational Society, BVRIT is one of Telangana's leading autonomous engineering institutions.</p>
                     <div class="full-content" hidden>
+                         <div class="about-slider">
+
+                               <img src="images/about_bvrit1.jpg" class="slide active">
+
+                              <img src="images/about_bvrit2.jpeg" class="slide">
+
+                              <img src="images/ATL-Building.png" class="slide">
+
+                               <div class="slider-dots">
+                                     <span class="active"></span>
+                                           <span></span>
+                                          <span></span>
+                                 </div>
+
+                        </div>
                         <p>B V Raju Institute of Technology (BVRIT) was established in 1997 under the auspices of the Sri Vishnu Educational Society (SVES) by the eminent philanthropist Padmabhushan Dr. B. V. Raju. Since 2014, the institute has been granted autonomous status by the University Grants Commission (UGC). It is approved by AICTE and affiliated to JNTU Hyderabad, Telangana. The institute is guided by a governing body comprising distinguished professionals from IITs, premier engineering institutions, and government sectors, under the leadership of Sri K. V. Vishnu Raju. The institution follows a strong academic governance framework focused on continuous improvement, quality enhancement, and excellence in technical education.</p>
                         <p>The institute offers a wide range of undergraduate and postgraduate programmes. The undergraduate programmes include Bachelor of Technology (B.Tech) in Computer Science and Engineering, Computer Science and Engineering (Artificial Intelligence and Machine Learning), Computer Science and Engineering (Data Science), Artificial Intelligence and Data Science, Information Technology, Electronics and Communication Engineering, Electrical and Electronics Engineering, Mechanical Engineering, Civil Engineering, Biomedical Engineering, Pharmaceutical Engineering, and Chemical Engineering. At the postgraduate level, the institute offers M.Tech programmes in VLSI Design, Embedded Systems, Electric Vehicle Technology, Electrical Power Systems, Engineering Design, Computer Science and Engineering, Data Science, and Chemical Engineering.</p>
                         <p>The vision of establishing BVRIT was to provide high-quality technical education in an environment that fosters the holistic development of students. Over the years, the institute has strengthened its academic reputation through innovative teaching–learning practices, outcome-based education, modern infrastructure, industry-aligned curriculum, and strong placement support. It continues to nurture engineering graduates with strong technical competence, ethical values, and professional skills required for global challenges.</p>
@@ -117,6 +191,23 @@
                     <h3>Department of Computer Science & Engineering</h3>
                     <p class="preview">The department offers multiple UG and PG programmes with modern laboratories, research groups and strong industry collaborations.</p>
                     <div class="full-content" hidden>
+
+                        <div class="about-slider">
+
+                                  <img src="images/cse.webp" class="slide active" alt="CSE Department">
+
+                                 <img src="images/cse2.jpg" class="slide" alt="CSE Lab">
+
+                                 <img src="images/cse3.jpg" class="slide" alt="Students">
+
+                                      <div class="slider-dots">
+                                          <span class="active"></span>
+                                          <span></span>
+                                          <span></span>
+                                      </div>
+
+                        </div>
+
                         <p>The Department of Computer Science and Engineering at BVRIT was established in 1997. At present, the department offers five undergraduate programmes: Computer Science and Engineering with an intake of 540 students, CSE–Artificial Intelligence and Machine Learning with an intake of 180 students, CSE–Data Science with an intake of 180 students, Artificial Intelligence and Data Science with an intake of 180 students, and Computer Science and Business Systems with an intake of 60 students. The department also offers two M.Tech programmes in Computer Science and Engineering and Data Science with an intake of 12 students each.</p>
                         <p>The department is equipped with state-of-the-art infrastructure, advanced computing facilities, high-speed internet, and wireless networks to support quality education and research. The faculty members, with strong teaching and research expertise, are committed to delivering high-quality technical education and fostering innovation among students.</p>
                         <p>The department actively promotes industry–institute collaboration by identifying emerging areas of interest and engaging in funded research projects, consultancy services, and collaborative initiatives. The major research areas of the department include Artificial Intelligence, Machine Learning, Data Science, Big Data, Internet of Things, Cyber Security, Image Processing, Information Security, Virtual Reality, Blockchain Technology, Parallel Processing, and Human–Computer Interaction.</p>
@@ -124,7 +215,9 @@
                     <button class="btn read-more">Read More →</button>
                 </article>
 
-                <article class="about-card fullwidth" data-preview-lines="3" aria-expanded="false">
+                <article class="about-card fullwidth conference-card"
+                    data-preview-lines="3"
+                      aria-expanded="false">
                     <h3>About the Conference</h3>
                     <p class="preview">ICASIS 2027 brings together researchers, academicians, industry experts and innovators to explore Artificial Intelligence for Innovation and Sustainability. The programme features keynote talks, workshops, and panel discussions that highlight practical applications and research breakthroughs. Join us to connect with peers, share ideas, and explore collaborative opportunities.</p>
                     <div class="full-content" hidden>
@@ -278,82 +371,1346 @@
 
 </div>
 
-    <p class="cfp-intro">
-        Prospective authors are invited to submit papers to the conference tracks below, but are not limited to them.
-    </p>
 
 </section>
-<!--Tracks-->
-<section class="section" id="tracks">
-    <h2>Conference Tracks</h2>
-    <div class="tracks">
-        <div class="track">Artificial Intelligence & ML</div>
-        <div class="track">Data Science & Analytics</div>
-        <div class="track">Cybersecurity</div>
-        <div class="track">Cloud Computing</div>
-        <div class="track">IoT</div>
-        <div class="track">Blockchain</div>
-    </div>
-</section>
+
  <!--Important Dates section-->
-<section class="section" id="dates">
-    <h2>Important Dates</h2>
+<!-- ===========================
+     IMPORTANT DATES
+=========================== -->
 
-    <div class="dates-grid">
-        <div class="date-card">
-            <h3>Abstract Submission</h3>
-            <p>10 February 2027</p>
+<!-- =========================================
+        IMPORTANT DATES
+========================================== -->
+
+<section id="dates" class="important-dates-section">
+
+    <div class="dates-container">
+
+        <!-- Badge -->
+
+        <div class="dates-badge">
+
+            <i class="fa-regular fa-calendar-days"></i>
+
+            <span>IMPORTANT DATES</span>
+
         </div>
 
-        <div class="date-card">
-            <h3>Notification of Acceptance</h3>
-            <p>20 February 2027</p>
+        <!-- Heading -->
+
+        <h2 class="dates-heading">
+
+            Important Dates
+
+        </h2>
+
+        <p class="dates-description">
+
+            Mark your calendar and keep track of key milestones for ICASIS 2027.
+
+        </p>
+
+        <!-- Decorative Divider -->
+
+        <div class="dates-divider">
+
+            <span></span>
+
         </div>
 
-        <div class="date-card">
-            <h3>Camera Ready Submission</h3>
-            <p>5 March 2027</p>
+        <!-- Timeline -->
+
+        <div class="timeline">
+
+            <!-- Gradient Line -->
+
+            <div class="timeline-line"></div>
+
+            <!-- Item 1 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-circle green">
+
+                    <i class="fa-regular fa-pen-to-square"></i>
+
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="timeline-dot"></div>
+
+                <h4>30 June 2026</h4>
+
+                <p>
+
+                    Abstract / Paper<br>
+
+                    Submission Starts
+
+                </p>
+
+            </div>
+
+            <!-- Item 2 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-circle teal">
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="timeline-dot"></div>
+
+                <h4>30 September 2026</h4>
+
+                <p>
+
+                    Deadline for Abstract
+
+                    and Paper Submission
+
+                    to the General Tracks
+
+                </p>
+
+            </div>
+
+            <!-- Item 3 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-circle blue">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="timeline-dot"></div>
+
+                <h4>20 November 2026</h4>
+
+                <p>
+
+                    Notification of
+
+                    Acceptance
+
+                </p>
+
+            </div>
+
+            <!-- Item 4 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-circle blue">
+
+                    <i class="fa-regular fa-file-lines"></i>
+
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="timeline-dot"></div>
+
+                <h4>30 November 2026</h4>
+
+                <p>
+
+                    Submission Deadline
+
+                    for the Final Version
+
+                    of the Proceeding Paper
+
+                </p>
+
+            </div>
+
+            <!-- Item 5 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-circle blue">
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="timeline-dot"></div>
+
+                <h4>30 December 2026</h4>
+
+                <p>
+
+                    Registration
+
+                    Ends
+
+                </p>
+
+            </div>
+
+            <!-- Conference -->
+
+            <div class="timeline-item conference">
+
+                <div class="timeline-circle conference-circle">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                </div>
+
+                <div class="timeline-connector conference-connector"></div>
+
+                <div class="timeline-dot conference-dot"></div>
+
+                <h4>30–31 March 2027</h4>
+
+                <p>
+
+                    <strong>ICASIS 2027</strong><br>
+
+                    Conference
+
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="date-card highlight">
-            <h3>Conference Dates</h3>
-            <p>26–27 February 2027</p>
-        </div>
     </div>
+
 </section>
 
 
 <!--Registration-->
 
-<section class="section" id="registration">
+<!-- ================= REGISTRATION FEES ================= -->
+
+<section id="registration" class="registration-section">
+
+    <div class="registration-heading">
+
     <h2>Registration Fees</h2>
 
-    <div class="registration-table">
-        <div class="reg-row header">
-            <div>Category</div>
-            <div>Indian Participants</div>
-        </div>
-
-        <div class="reg-row">
-            <div>Students (UG/PG)</div>
-            <div>₹ 800</div>
-        </div>
-
-        <div class="reg-row">
-            <div>Research Scholars</div>
-            <div>₹ 1000</div>
-        </div>
-
-        <div class="reg-row">
-            <div>Faculty / Academicians</div>
-            <div>₹ 1500</div>
-        </div>
-
-        <div class="reg-row">
-            <div>Industry Professionals</div>
-            <div>₹ 2000</div>
-        </div>
+    <div class="section-divider">
+        <span></span>
     </div>
+
+</div>
+
+    <div class="registration-card">
+
+        <table class="registration-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        <i class="fas fa-file-alt"></i>
+                        Particulars
+                    </th>
+
+                    <th>
+                        <i class="fas fa-tags"></i>
+                        Registration Fee
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+
+                        <div class="fee-category">
+
+                            <div class="fee-icon icon-blue">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+
+                            <span>Foreign Delegates</span>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+
+                        <div class="fee-price">
+
+                            <span class="price-box">
+                                US $100
+                            </span>
+
+                            <span class="per-paper">
+                                per paper
+                            </span>
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <div class="fee-category">
+
+                            <div class="fee-icon icon-orange">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+
+                            <span>Industry Delegates from India</span>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+
+                        <div class="fee-price">
+
+                            <span class="price-box">
+                                ₹10,000
+                            </span>
+
+                            <span class="per-paper">
+                                per paper
+                            </span>
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <div class="fee-category">
+
+                            <div class="fee-icon icon-teal">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+
+                            <span>Faculty Members from India</span>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+
+                        <div class="fee-price">
+
+                            <span class="price-box">
+                                ₹8,000
+                            </span>
+
+                            <span class="per-paper">
+                                per paper
+                            </span>
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <div class="fee-category">
+
+                            <div class="fee-icon icon-green">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+
+                            <span>Students / Research Scholars from India</span>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+
+                        <div class="fee-price">
+
+                            <span class="price-box">
+                                ₹7,000
+                            </span>
+
+                            <span class="per-paper">
+                                per paper
+                            </span>
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- explore hyderabad-->
+<!-- Explore Hyderabad -->
+<section id="explore" class="explore-section">
+
+    <div class="hyderabad-map">
+
+        <!-- <img src="images/hyd1.png" class="map-bg"> -->
+
+        <div class="explore-header">
+            <h2>Explore Hyderabad</h2>
+        </div>
+
+        <div class="pin charminar">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Charminar</span>
+        </div>
+
+        <div class="pin golconda">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Golconda Fort</span>
+        </div>
+
+        <div class="pin salarjung">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Salar Jung Museum</span>
+        </div>
+
+        <div class="pin chowmahalla">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Chowmahalla Palace</span>
+        </div>
+
+        <div class="pin tankbund">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Tank Bund</span>
+        </div>
+
+        <div class="pin ramoji">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Ramoji Film City</span>
+        </div>
+
+    </div>
+
+    <!-- Carousel -->
+    <div class="explore-ribbon">
+
+        <!-- Left Arrow -->
+        <button class="carousel-nav left">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Slides -->
+        <div class="ribbon-track">
+
+            <div class="ribbon-card active">
+                <img src="images/char9 - Edited.png">
+                <h3>Charminar</h3>
+            </div>
+
+            <div class="ribbon-card">
+                <img src="images/golk.png">
+                <h3>Golconda Fort</h3>
+            </div>
+
+            <div class="ribbon-card">
+                <img src="images/salar6.png">
+                <h3>Salar Jung Museum</h3>
+            </div>
+
+            <div class="ribbon-card">
+                <img src="images/chow3.png">
+                <h3>Chowmahalla Palace</h3>
+            </div>
+
+            <div class="ribbon-card">
+                <img src="images/tank1.png">
+                <h3>Tank Bund</h3>
+            </div>
+
+            <div class="ribbon-card">
+                <img src="images/ramoji2.png">
+                <h3>Ramoji Film City</h3>
+            </div>
+
+        </div>
+
+        <!-- Right Arrow -->
+        <button class="carousel-nav right">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     ORGANIZING COMMITTEE
+=========================== -->
+
+<section id="committee" class="committee">
+
+    <div class="section-header">
+    <h2>Organizing Committee</h2>
+    <p>Meet the leadership and organizing team behind ICASIS 2027.</p>
+</div>
+
+<!-- ===========================
+     CHIEF PATRON
+=========================== -->
+
+<div class="committee-category">
+
+    <h3>Chief Patron</h3>
+
+    <div class="committee-grid single-member">
+
+        <div class="committee-card featured">
+
+            <div class="committee-photo">
+
+                <img src="images/cheif-patron.webp" alt="Chief Patron">
+
+            </div>
+
+            <h4>Sri. K. V. Vishnu Raju</h4>
+
+            <span>Chairman</span>
+
+            <p>Sri Vishnu Educational Society</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--patrons-->
+<!-- ======================================
+        PATRONS
+====================================== -->
+
+<div class="committee-category">
+
+    <h3>Patrons</h3>
+
+    <div class="committee-grid three-members">
+
+        <div class="committee-card">
+
+            <div class="committee-photo">
+                <img src="images/VC.jpg" alt="Sri. Ravichandran Rajagopal">
+            </div>
+
+            <h4>Sri. Ravichandran Rajagopal</h4>
+
+            <span>Vice Chairman</span>
+
+            <p>Sri Vishnu Educational Society</p>
+
+        </div>
+
+        <div class="committee-card">
+
+            <div class="committee-photo">
+                <img src="images/adithya.jpg" alt="Sri. K. Aditya Vissam">
+            </div>
+
+            <h4>Sri. K. Aditya Vissam</h4>
+
+            <span>Secretary</span>
+
+            <p>Sri Vishnu Educational Society</p>
+
+        </div>
+
+        <div class="committee-card">
+
+            <div class="committee-photo">
+                <img src="images/JC.jpg" alt="K. Sai Sumant">
+            </div>
+
+            <h4>Sri. K. Sai Sumant</h4>
+
+            <span>Joint Secretary</span>
+
+            <p>Sri Vishnu Educational Society</p>
+
+        </div>
+
+    </div>
+
+</div>
+<!--hon chairs-->
+<!-- ======================================
+        HONORARY CHAIR
+====================================== -->
+
+<div class="committee-category">
+
+    <h3>Honorary Chairs</h3>
+
+    <div class="committee-grid two-members">
+
+        <!-- Card 1 -->
+
+        <div class="committee-card">
+
+            <div class="committee-photo">
+                <img src="images/director.jpg" alt="Dr. K. Lakshmi Prasad">
+            </div>
+
+            <h4>Dr. K. Lakshmi Prasad</h4>
+
+            <span>Director</span>
+
+            <p>BVRIT, Narsapur</p>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="committee-card">
+
+            <div class="committee-photo">
+                <img src="images/princi.jpg" alt="Dr. Sanjay Dubey">
+            </div>
+
+            <h4>Dr. Sanjay Dubey</h4>
+
+            <span>Principal</span>
+
+            <p>BVRIT, Narsapur</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--prog chairs-->
+
+<!-- ======================================
+        PROGRAM CHAIRS
+====================================== -->
+
+<div class="committee-category">
+
+    <h3>Program Chairs</h3>
+
+    <div class="committee-grid three-members">
+
+        <!-- Card 1 -->
+
+        <div class="committee-card">
+
+            <div class="committee-photo">
+                <img src="images/dean.jpeg" alt="Dr. A. Jagan">
+            </div>
+
+            <h4>Dr. A. Jagan</h4>
+
+            <span>Professor & Dean IQAC</span>
+
+            <p>BVRIT, Narsapur</p>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="committee-card">
+
+            <div class="committee-photo">
+                <img src="images/hod.jpg" alt="Dr. Ch. Madhu Babu">
+            </div>
+
+            <h4>Dr. Ch. Madhu Babu</h4>
+
+            <span>Professor & Head</span>
+
+            <p>Department of CSE<br>BVRIT, Narsapur</p>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="committee-card">
+
+            <div class="committee-photo">
+                <img src="images/pitchai.webp" alt="Dr. R. Pitchai">
+            </div>
+
+            <h4>Dr. R. Pitchai</h4>
+
+            <span>Professor</span>
+
+            <p>Department of CSE<br>BVRIT, Narsapur</p>
+
+        </div>
+
+    </div>
+
+</div>
+<!--org chairs-->
+
+<div class="committee-directory">
+
+
+    <div class="committee-accordion">
+
+        <div class="committee-header">
+            <span>Organizing Chairs</span>
+        </div>
+
+        <div class="committee-list">
+
+            <div class="committee-member">
+                Dr. Ashok Kumar Nanda
+                <span>Professor</span>
+            </div>
+
+            <div class="committee-member">
+                Dr. L. Pallavi
+                <span>Associate Professor</span>
+            </div>
+
+            <div class="committee-member">
+                Dr. T. Subba Reddy
+                <span>Associate Professor</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+<!--TPC charis-->
+
+    <div class="committee-accordion">
+
+        <div class="committee-header">
+            <span>TPC Chairs</span>
+        </div>
+
+        <div class="committee-list">
+
+            <div class="committee-subgroup">
+                <h4>AI for Security, Ethics & Future Technologies</h4>
+
+                <div class="committee-member">
+                    Dr. M. Swathi
+                    <span>Associate Professor</span>
+                </div>
+
+                <div class="committee-member">
+                    Dr. P. M. Jyosthna
+                    <span>Associate Professor</span>
+                </div>
+            </div>
+
+            <div class="committee-subgroup">
+                <h4>AI for Environment Sustainability</h4>
+
+                <div class="committee-member">
+                    Dr. Anil Ram
+                    <span>Assistant Professor</span>
+                </div>
+
+                <div class="committee-member">
+                    Dr. V. Sriharsha
+                    <span>Assistant Professor</span>
+                </div>
+            </div>
+
+            <div class="committee-subgroup">
+                <h4>AI for Smart Cities & Infrastructure</h4>
+
+                <div class="committee-member">
+                    Dr. Ch. Rajya Lakshmi
+                    <span>Associate Professor</span>
+                </div>
+
+                <div class="committee-member">
+                    Dr. G. Ramani
+                    <span>Assistant Professor</span>
+                </div>
+            </div>
+
+            <div class="committee-subgroup">
+                <h4>AI for Industry & Manufacturing</h4>
+
+                <div class="committee-member">
+                    Dr. V. Pradeep Kumar
+                    <span>Associate Professor</span>
+                </div>
+
+                <div class="committee-member">
+                    Dr. Ch. Priyadarshini
+                    <span>Assistant Professor</span>
+                </div>
+            </div>
+
+            <div class="committee-subgroup">
+                <h4>AI for Healthcare, Education & Social Impact</h4>
+
+                <div class="committee-member">
+                    Dr. V. Pavan Kumar
+                    <span>Assistant Professor</span>
+                </div>
+
+                <div class="committee-member">
+                    Dr. D. Abdus Subhahan
+                    <span>Assistant Professor</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+<!--publicaton chairs-->
+
+    <div class="committee-accordion">
+
+        <div class="committee-header">
+            <span>Publication Chairs</span>
+        </div>
+
+        <div class="committee-list">
+
+            <div class="committee-member">
+                Dr. T. Subba Reddy
+                <span>Associate Professor</span>
+            </div>
+
+            <div class="committee-member">
+                Dr. Ayesha Naureen
+                <span>Assistant Professor</span>
+            </div>
+
+            <div class="committee-member">
+                Mr. PSRB Shashank
+                <span>Assistant Professor</span>
+            </div>
+
+            <div class="committee-member">
+                Mrs. K. Durga Devi
+                <span>Assistant Professor</span>
+            </div>
+
+            <div class="committee-member">
+                Mr. D. Saikiran
+                <span>Assistant Professor</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+<!--finance chairs-->
+
+    <div class="committee-accordion">
+
+        <div class="committee-header">
+            <span>Finance Chairs</span>
+        </div>
+
+        <div class="committee-list">
+
+            <div class="committee-member">
+                Dr. D. Jyothirmai
+                <span>Assistant Professor</span>
+            </div>
+
+            <div class="committee-member">
+                Dr. M. Maravarman
+                <span>Assistant Professor</span>
+            </div>
+
+            <div class="committee-member">
+                Mrs. Y. Venkata Naga Vasavi
+                <span>Assistant Professor</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+<!--sponsership chair-->
+
+    <div class="committee-accordion">
+
+        <div class="committee-header">
+            <span>Sponsorship Chairs</span>
+        </div>
+
+        <div class="committee-list">
+
+            <div class="committee-member">
+                Mr. D. Jagadeesh
+                <span>Assistant Professor</span>
+            </div>
+
+            <div class="committee-member">
+                Mrs. K. Pranitha
+                <span>Assistant Professor</span>
+            </div>
+
+            <div class="committee-member">
+                Mr. N. Mahboob Subani
+                <span>Assistant Professor</span>
+            </div>
+
+            <div class="committee-member">
+                Mrs. V. Nirosha
+                <span>Assistant Professor</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+<!--publication & media-->
+
+
+    <div class="committee-accordion">
+
+        <div class="committee-header"><span>Publicity & Media Chairs</span></div>
+
+        <div class="committee-list">
+
+            <div class="committee-member">Mr. S. Srinuvasarao <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. M. Padmaja <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mr. K. Mahesh <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. D. Manasa <span>Assistant Professor</span></div>
+
+        </div>
+
+    </div>
+
+
+<!--LOGI -->
+
+
+    <div class="committee-accordion">
+
+        <div class="committee-header"><span>Logistics Committee</span></div>
+
+        <div class="committee-list">
+
+            <div class="committee-member">Mr. S. Dinesh Krishnan <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mr. M. Manzoor Hussain <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mr. Ch. Mahesh Kumar <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mr. N. Ramesh <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mr. K. Shivaji Rao <span>Assistant Professor</span></div>
+
+        </div>
+
+    </div>
+
+
+<!--Hospitality-->
+
+    <div class="committee-accordion">
+
+        <div class="committee-header"><span>Hospitality Committee</span></div>
+
+        <div class="committee-list">
+
+            <div class="committee-member">Dr. K. Subba Rao <span>Professor</span></div>
+
+            <div class="committee-member">Dr. B. Sunitha <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mr. T. Satish Babu <span>Associate Professor</span></div>
+
+            <div class="committee-member">Mr. Md. Shabbeer <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mr. P. Bhaskar Rao <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. A. Vijaya Lakshmi <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mr. S. Anjanayya <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. B. Ushashri <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. P. Jhansi Devi <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. R. Deepika <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. D. Deepika <span>Assistant Professor</span></div>
+
+        </div>
+
+    </div>
+
+
+<!--Registration Committee-->
+
+
+    <div class="committee-accordion">
+
+        <div class="committee-header"><span>Registration Committee</span></div>
+
+        <div class="committee-list">
+
+            <div class="committee-member">Mr. J. Manikandan <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. V. Sathya Priya <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. K. V. Mahalakshmi <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. V. V. S. Lakshmi Kanthety <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. D. Nagasudha <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. G. Vindya <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. Y. Srividya <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. R. Neelima <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. S. Sai Deepthi <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mr. Mastan Md Meera Durga <span>Assistant Professor</span></div>
+
+        </div>
+
+    </div>
+
+
+<!--Event management-->
+
+
+    <div class="committee-accordion">
+
+        <div class="committee-header"><span>Event Management Committee</span></div>
+
+        <div class="committee-list">
+
+            <div class="committee-member">Mr. V. Punna Rao <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mr. S. Dinesh Krishnan <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. Ch. Sreedevi <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. T. Shilpa <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. G. Ahalya Rani <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. M. Shereesha <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. G. Geetha <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. D. Ravalika <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. K. Praveena <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. B. Srujana <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. P. Shashanka <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. K. Ushasri <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mr. Vazed Ahmed <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Mrs. K. Hemanthi <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Ms. Samreen Fathima <span>Assistant Professor</span></div>
+
+            <div class="committee-member">Ms. Kulakarni Sindhura <span>Assistant Professor</span></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+   <!-- ================= ADVISORY COMMITTEE ================= -->
+
+
+<section class="advisory-section">
+
+    <div class="advisory-title">
+        <h2>Advisory Committee</h2>
+    </div>
+
+    <div class="advisory-grid">
+
+        <!-- International -->
+        <div class="advisory-column">
+
+            <h3>International Advisors</h3>
+
+            <div class="advisor">
+    <h4>Dr. J. Balamurugan</h4>
+    <p>Research Associate Professor, Materials Science and Engineering, KAIST, Republic of Korea</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. J. Joshua Thomas</h4>
+    <p>Professor, Department of Computing, UOW Malaysia KDU Penang University College, Malaysia</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Razia Sulthana Abdul Kareem</h4>
+    <p>Senior Lecturer in Computer Science, University of Greenwich, London, United Kingdom</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Lipo Wang</h4>
+    <p>Professor, School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Basim Alhadidi</h4>
+    <p>Professor, Department of Computer Information Systems, Al-Balqa Applied University, Jordan</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Xiao-Zhi Gao</h4>
+    <p>Professor, School of Computing, University of Eastern Finland, Finland</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Ramesh Bansal</h4>
+    <p>Professor, Department of Electrical Engineering, University of Sharjah, UAE</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Baiju Karun</h4>
+    <p>Lecturer, Electrical Electronics & Computer Engineering Unit, University of Technology and Applied Sciences, Muscat, Oman</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Kenneth Kent</h4>
+    <p>Professor, Computer Science, University of New Brunswick, Canada</p>
+</div>
+
+<div class="advisor">
+    <h4>Mr. Vishal Bharadwaj Meruga</h4>
+    <p>Senior Manager – Data Science, Marriott International, USA</p>
+</div>
+
+<div class="advisor">
+    <h4>Mr. Siva Prasad Patnayakuni</h4>
+    <p>Senior Data Engineer, H-E-B, Texas, USA</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Rijo Jackson Tom</h4>
+    <p>Principal Data Scientist, Augusta Hitech Soft Solutions LLC, Florida, USA</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. A. Daniel</h4>
+    <p>Assistant Professor, Computer Science and Engineering, Manipal Academy of Higher Education, Dubai</p>
+</div>
+
+            
+
+            <!-- Continue adding advisors here -->
+
+        </div>
+
+
+
+        <!-- National -->
+
+        <div class="advisory-column">
+
+            <h3>National Advisors</h3>
+
+            <div class="advisor">
+    <h4>Dr. Lalit Kumar Awasthi</h4>
+    <p>Vice Chancellor, SPU Mandi, Himachal Pradesh</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Aditya Kumar Trivedi</h4>
+    <p>Professor, IT, IIITDM Gwalior, Madhya Pradesh</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. C. Krishna Mohan</h4>
+    <p>Professor, CSE, IIT Hyderabad, Telangana</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. P. Santhi Thilagam</h4>
+    <p>Professor, CSE, NIT Surathkal, Karnataka</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. T. Kumaraguru</h4>
+    <p>Senior Scientist, IICT Hyderabad, Telangana</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. S. Sasirekha</h4>
+    <p>Associate Professor, CSE, NITTTR Chennai, Tamil Nadu</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Annappa B</h4>
+    <p>Professor, CSE, NIT Surathkal, Karnataka</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Rajiv Misra</h4>
+    <p>Professor & Head, CSE, IIT Patna, Bihar</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Bibhudatta Sahoo</h4>
+    <p>Professor, CSE, NIT Rourkela, Odisha</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Chiranjeev Kumar</h4>
+    <p>Professor (HAG), CSE, IIT (ISM) Dhanbad, Jharkhand</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Umesh Deshpande</h4>
+    <p>Professor, CSE, VNIT Nagpur, Maharashtra</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Subhrabrata Choudhury</h4>
+    <p>Professor, CSE, NIT Durgapur, West Bengal</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Venkatesan M</h4>
+    <p>Associate Professor & HoD, CSE, NIT Puducherry, Puducherry</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. R. Murugan</h4>
+    <p>Associate Professor, ECE, NIT Silchar, Assam</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Supraja P</h4>
+    <p>Associate Professor, CSE, SRMIST Chennai, Tamil Nadu</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Venkatesh</h4>
+    <p>Associate Professor, CSE, University of Visvesvaraya College of Engineering, Karnataka</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Lakshmi D</h4>
+    <p>Associate Professor, CSE, VIT Bhopal University, Madhya Pradesh</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. N. Kiran Babu</h4>
+    <p>Assistant Professor, CSE, SRM AP University, Andhra Pradesh</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. J. Harikiran</h4>
+    <p>Professor, CSE, VIT-AP University, Andhra Pradesh</p>
+</div>
+
+<div class="advisor">
+    <h4>Mr. Saran Vura</h4>
+    <p>Manager – Technical Delivery, Xebia CMIT Software Services Pvt. Ltd., Telangana</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Garima Shakya</h4>
+    <p>Assistant Professor, CSE, IIT Palakkad, Kerala</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Srinivasa Rao Battula</h4>
+    <p>Professor, School of Computer and Information Sciences, University of Hyderabad, Telangana</p>
+</div>
+
+<div class="advisor">
+    <h4>Mr. Somnath Guha Neogi</h4>
+    <p>Technical Director, Offensive Security, UV Cyber, Bengaluru, Karnataka</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Lalit Mohan Sanagavarapu</h4>
+    <p>Chief Product Officer, Quick Heal, Hyderabad, Telangana</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. A. Ayyasamy</h4>
+    <p>Professor, CSE, VIT Vellore, Tamil Nadu</p>
+</div>
+
+<!-- Newly Added -->
+
+<div class="advisor">
+    <h4>Dr. Gaurav Kumar Yadav</h4>
+    <p>Research Associate, Optoelectronic Nanodevice Research Laboratory, Department of Electrical and Electronics Engineering, IIT Indore</p>
+</div>
+
+<div class="advisor">
+    <h4>Dr. Swarnendu Kumar Chakraborty</h4>
+    <p>Associate Professor & Academic Dean, Department of Computer Science and Engineering, NIT Arunachal Pradesh</p>
+</div>
+
+            </div>
+
+            <!-- Continue adding advisors here -->
+
+        </div>
+
+    </div>
+
+</section>
+    
+
+    
+
 </section>
 
 <!--Contact and Venue-->
@@ -398,10 +1755,12 @@
     </div>
 </section>
 
+
+
 <footer>
 © 2027 ICASIS | Department of Computer Science | BV Raju Institute of Technology
 </footer>
-            </section>
+            
 
             
 

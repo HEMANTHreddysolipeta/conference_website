@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How to Travel — ICASIS 2027</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+:root{
+
+--primary:#0F766E;
+--secondary:#14B8A6;
+--accent:#10B981;
+--success:#22C55E;
+--blue:#2563EB;
+--sky:#0EA5E9;
+
+--white:#fff;
+--bg:#FCFEFD;
+--light:#F7FBF9;
+--mint:#ECFDF5;
+
+--heading:#0F172A;
+--heading2:#1F2937;
+--text:#64748B;
+
+}
+
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:var(--bg);
+
+color:var(--text);
+
+
+
+}
+
+h1,h2,h3,h4,h5{
+
+font-family:'Playfair Display',serif;
+
+color:var(--heading);
+
+}
+
+.card{
+
+background:white;
+
+border-radius:24px;
+
+border:1px solid #E5E7EB;
+
+box-shadow:0 15px 35px rgba(15,118,110,.08);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 18px 40px rgba(15,118,110,.12);
+
+}
+
+</style>
+
+</head>
+<body class="bg-white text-slate-800">
+
+  <div id="navbar">
+
+  <script>
+fetch("navbar.html")
+.then(response => response.text())
+.then(data => {
+
+    document.getElementById("navbar").innerHTML = data;
+
+    // Mobile Menu
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    if(menuToggle && navLinks){
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    }
+
+});
+</script>
+  </div>
+<!-- ================= HERO ================= -->
+
+<section
+class="relative overflow-hidden text-white py-28"
+style="
+background:linear-gradient(
+90deg,
+#0F766E 0%,
+#14B8A6 55%,
+#22C7C0 100%);
+">
+
+<div class="absolute inset-0 opacity-10">
+
+<div class="absolute -left-24 -top-24 w-96 h-96 rounded-full bg-white blur-3xl"></div>
+
+<div class="absolute right-0 bottom-0 w-96 h-96 rounded-full bg-white blur-3xl"></div>
+
+</div>
+
+<div class="relative max-w-7xl mx-auto px-6 text-center">
+
+<h1
+
+class="text-4xl md:text-5xl font-black text-white"
+style="font-family:'Playfair Display',serif;">
+
+HOW TO TRAVEL
+
+</h1>
+
+</h1>
+
+<p class="mt-6 text-lg text-white/90">
+
+<a href="#" class="hover:underline">
+
+Home
+
+</a>
+
+<span class="mx-3">|</span>
+
+<a href="#" class="hover:underline">
+
+Venue
+
+</a>
+
+<span class="mx-3">|</span>
+
+<span class="font-semibold">
+
+How To Travel
+
+</span>
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= VENUE ================= -->
+
+<section class="py-20 bg-[#FCFEFD]">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="card p-12">
+
+<h2
+class="text-4xl text-center font-black"
+style="
+font-family:'Playfair Display',serif;
+color:#0F766E;">
+
+Conference Venue
+
+</h2>
+
+<p class="text-center text-xl mt-5 font-semibold text-[#1F2937]">
+
+B V Raju Institute of Technology (BVRIT)
+
+</p>
+
+<p class="text-center mt-2 text-[#64748B]">
+
+Narsapur • Telangana • India
+
+</p>
+
+<div class="grid md:grid-cols-2 gap-8 mt-12">
+
+<div
+class="rounded-3xl p-8"
+style="
+background:#F7FBF9;
+border:1px solid #DCEFEA;">
+
+<div class="flex items-center gap-5">
+
+<div
+class="w-16 h-16 rounded-full flex items-center justify-center text-3xl text-white"
+style="background:#0F766E;">
+
+🚌
+
+</div>
+
+<div>
+
+<h3 class="text-xl font-bold text-[#0F172A]">
+
+Transport
+
+</h3>
+
+<p class="text-sm text-[#64748B] mt-1">
+
+College buses, TSRTC buses and airport transfers.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div
+class="rounded-3xl p-8"
+style="
+background:#F7FBF9;
+border:1px solid #DCEFEA;">
+
+<div class="flex items-center gap-5">
+
+<div
+class="w-16 h-16 rounded-full flex items-center justify-center text-3xl text-white"
+style="background:#10B981;">
+
+🏨
+
+</div>
+
+<div>
+
+<h3 class="text-2xl font-bold text-[#0F172A]">
+
+Accommodation
+
+</h3>
+
+<p class="text-[#64748B] mt-1">
+
+Hotels and guest houses available near campus.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div
+class="mt-10 rounded-3xl p-6 text-center"
+style="
+background:#ECFDF5;
+border:1px solid #DCEFEA;">
+
+<h3 class="text-xl font-bold text-[#0F766E]">
+
+📍 Greater Hyderabad Region
+
+</h3>
+
+<p class="mt-2 text-[#64748B]">
+
+Located near Sangareddy • IIT Hyderabad • ORR Connectivity
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+ <!-- ================= HOW TO REACH ================= -->
+
+<section class="py-8 bg-[#FCFEFD]">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<!-- Section Title -->
+
+<div class="flex items-center gap-6 mb-8">
+
+<div class="flex-1 h-px bg-[#DCEFEA]"></div>
+
+<h2
+class="px-6 py-2 rounded-full bg-[#ECFDF5] text-[#0F766E] text-sm font-bold"
+style="font-family:'Poppins',sans-serif;">
+
+HOW TO REACH BVRIT, NARSAPUR
+
+</h2>
+
+<div class="flex-1 h-px bg-[#DCEFEA]"></div>
+
+</div>
+
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 items-stretch">
+
+<!-- ================= BY FLIGHT ================= -->
+
+<div class="card p-4 md:p-5 h-full flex flex-col">
+
+<div class="flex flex-col items-start gap-3 mb-4">
+
+<div
+class="w-12 h-12 rounded-xl bg-[#ECFDF5] flex items-center justify-center text-2xl">
+
+✈️
+
+</div>
+
+<div>
+
+  <h3 class="text-xl font-bold text-[#0F766E]">
+
+By Flight
+
+</h3>
+
+<p class="text-sm leading-7 text-[#64748B]">
+
+Fastest way to reach the conference venue
+
+</p>
+
+</div>
+
+</div>
+
+<p class="leading-6 text-[#64748B]">
+
+The nearest airport is
+
+<b class="text-[#0F172A]">
+
+Rajiv Gandhi International Airport
+
+</b>
+
+located at Shamshabad, Hyderabad.
+
+</p>
+
+<div class="mt-4 rounded-2xl bg-[#F7FBF9] border border-[#DCEFEA] p-4">
+
+<h4 class="font-bold text-[#0F766E] mb-3">
+
+🛬 Airport
+
+</h4>
+
+<p>
+
+Rajiv Gandhi International Airport
+
+<br>
+
+Hyderabad – Telangana
+
+</p>
+
+</div>
+
+<div class="space-y-3 mt-5">
+
+<div class="flex gap-3">
+
+<div
+class="w-8 h-8 rounded-full bg-[#0F766E] text-white flex items-center justify-center font-bold text-sm shrink-0">
+
+1
+
+</div>
+
+<p class="leading-6">
+
+Book an
+
+<b>Outstation Cab</b>
+
+to BVRIT
+
+or travel by
+
+<b>Pushpak Bus</b>
+
+to Jubilee Bus Station.
+
+</p>
+
+</div>
+
+<div class="flex gap-3">
+
+<div
+class="w-8 h-8 rounded-full bg-[#0F766E] text-white flex items-center justify-center font-bold text-sm shrink-0">
+
+2
+
+</div>
+
+<p class="leading-6">
+
+Board TSRTC buses towards
+
+<b>Narsapur / Medak</b>
+
+from Jubilee Bus Station.
+
+</p>
+
+</div>
+
+</div>
+
+<div
+class="mt-5 p-4 rounded-2xl bg-yellow-50 border border-yellow-200">
+
+<p class="text-yellow-800 leading-6 text-sm">
+
+⚠️
+
+<strong>Travel Advice</strong>
+
+<br><br>
+
+Participants arriving after 5 PM are advised to stay overnight in Hyderabad and travel to the venue the following morning.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= BY ROAD ================= -->
+
+<div class="card p-4 md:p-5 h-full flex flex-col">
+
+<div class="flex flex-col items-start gap-3 mb-4">
+
+<div
+class="w-12 h-12 rounded-xl bg-[#ECFDF5] flex items-center justify-center text-2xl">
+
+🚌
+
+</div>
+
+<div>
+
+<h3 class="text-xl font-bold text-[#0F766E]">
+
+By Road
+
+</h3>
+
+<p class="text-[#64748B] mt-2">
+
+Comfortable bus and road connectivity
+
+</p>
+
+</div>
+
+</div>
+
+<p class="leading-6 text-[#64748B]">
+
+BVRIT is connected by
+
+<b>TSRTC buses</b>
+
+from Hyderabad, Sangareddy and Medak.
+
+Dedicated
+
+<b>College Buses</b>
+
+are also available for conference delegates.
+
+</p>
+
+<div class="mt-4 rounded-2xl bg-[#F7FBF9] border border-[#DCEFEA] p-4">
+
+<h4 class="font-bold text-[#0F766E] mb-3">
+
+🚏 Main Boarding Point
+
+</h4>
+
+<p>
+
+Jubilee Bus Station (JBS)
+
+→ Narsapur
+
+→ BVRIT Campus
+
+</p>
+
+</div>
+
+<div class="space-y-3 mt-5">
+
+<div class="flex gap-3">
+
+<div
+class="w-8 h-8 rounded-full bg-[#0F766E] text-white flex items-center justify-center font-bold text-sm shrink-0">
+
+1
+
+</div>
+
+<p>
+
+Use scheduled
+
+<b>BVRIT College Bus Services</b>
+
+from Hyderabad.
+
+</p>
+
+</div>
+
+<div class="flex gap-3">
+
+<div
+class="w-8 h-8 rounded-full bg-[#0F766E] text-white flex items-center justify-center font-bold text-sm shrink-0">
+
+2
+
+</div>
+
+<p>
+
+Refer to the official transport schedule for pickup locations and timings.
+
+</p>
+
+</div>
+
+</div>
+
+<div
+class="mt-5 p-4 rounded-2xl bg-yellow-50 border border-yellow-200">
+
+<p class="text-yellow-800 leading-6 text-sm">
+
+⚠️
+
+<strong>Travel Advice</strong>
+
+<br><br>
+
+Delegates arriving late should stay overnight in Hyderabad before travelling to the venue.
+
+</p>
+
+</div>
+
+<a
+href="BVRIT_All_Routes_Information_Sheet.pdf"
+target="_blank"
+class="inline-flex mt-5 px-6 py-3 rounded-xl text-white font-semibold text-sm transition hover:-translate-y-1"
+style="
+background:#2563EB;
+box-shadow:0 12px 30px rgba(37,99,235,.25);
+">
+📄 View Transport Routes
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+    <!-- By Train -->
+<div class="bg-white rounded-[24px] p-8 border border-[#E5E7EB] shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+
+  <div class="flex items-center gap-4 mb-6">
+
+    <div class="w-16 h-16 rounded-2xl bg-[#ECFDF5] flex items-center justify-center text-3xl shadow-md">
+      🚆
+    </div>
+
+    <div>
+      <h3 class="text-3xl font-bold text-[#0F766E]" style="font-family:'Playfair Display', serif;">
+        By Train
+      </h3>
+
+      <p class="text-[#64748B] text-sm">
+        Travel comfortably to the conference venue by rail
+      </p>
+    </div>
+
+  </div>
+
+  <p class="text-[#64748B] leading-8">
+    Hyderabad is well connected by rail from all major cities.
+    Visitors can reach BVRIT through Secunderabad, Nampally,
+    or Kacheguda Railway Stations.
+  </p>
+
+  <div class="mt-6 rounded-2xl bg-[#F7FBF9] border border-[#DCEFEA] p-5">
+
+    <div class="font-semibold text-[#0F766E] mb-2">
+      🚉 Major Railway Stations
+    </div>
+
+    <p class="text-[#64748B]">
+      Secunderabad • Nampally • Kacheguda
+    </p>
+
+  </div>
+
+  <div class="mt-8 rounded-2xl bg-yellow-50 border border-yellow-200 p-5">
+
+    <p class="text-yellow-800 leading-7">
+
+      ⚠️ <strong>Travel Tip:</strong><br>
+
+      If you arrive after 5 PM,
+      stay overnight in Hyderabad and travel
+      to BVRIT the following morning.
+
+    </p>
+
+  </div>
+
+  <div class="overflow-x-auto mt-8">
+
+    <table class="w-full rounded-2xl overflow-hidden border border-[#E5E7EB]">
+
+      <thead style="background:#0F766E;color:white;">
+
+        <tr>
+
+          <th class="p-4 text-left">Step</th>
+
+          <th class="p-4 text-left">From</th>
+
+          <th class="p-4 text-left">To</th>
+
+          <th class="p-4 text-left">Travel Option</th>
+
+        </tr>
+
+      </thead>
+
+      <tbody class="text-[#64748B]">
+
+        <tr class="bg-white hover:bg-[#ECFDF5]">
+
+          <td class="p-4" rowspan="3">1</td>
+
+          <td class="p-4">Secunderabad Railway Station</td>
+
+          <td class="p-4">Gandimaisamma</td>
+
+          <td class="p-4">Bus 272 or Cab</td>
+
+        </tr>
+
+        <tr class="bg-[#F7FBF9] hover:bg-[#ECFDF5]">
+
+          <td class="p-4">Nampally Railway Station</td>
+
+          <td class="p-4">Gandimaisamma</td>
+
+          <td class="p-4">Bus 9X / 230 or Cab</td>
+
+        </tr>
+
+        <tr class="bg-white hover:bg-[#ECFDF5]">
+
+          <td class="p-4">Kacheguda Railway Station</td>
+
+          <td class="p-4">Gandimaisamma</td>
+
+          <td class="p-4">Bus 83J/272 or Cab</td>
+
+        </tr>
+
+        <tr class="bg-[#F7FBF9] hover:bg-[#ECFDF5]">
+
+          <td class="p-4">2</td>
+
+          <td class="p-4">Gandimaisamma</td>
+
+          <td class="p-4">Narsapur</td>
+
+          <td class="p-4">District Service Bus</td>
+
+        </tr>
+
+        <tr class="bg-white hover:bg-[#ECFDF5]">
+
+          <td class="p-4">3</td>
+
+          <td class="p-4">Narsapur Bus Stand</td>
+
+          <td class="p-4">BVRIT Campus</td>
+
+          <td class="p-4">Shared Auto Rickshaw</td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>
+
+<!-- Contact Coordinators -->
+<div class="mt-20">
+
+  <h2 class="text-center text-5xl font-black mb-12 text-[#0F766E]"
+      style="font-family:'Playfair Display', serif;">
+      Contact Coordinators
+  </h2>
+
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <!-- Faculty -->
+    <div class="bg-white rounded-[24px] border border-[#E5E7EB] shadow-lg p-10 text-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+
+      <div class="w-20 h-20 mx-auto rounded-full bg-[#ECFDF5] flex items-center justify-center text-4xl mb-6">
+        👨‍🏫
+      </div>
+
+      <h3 class="text-2xl font-bold text-[#0F766E]"
+          style="font-family:'Playfair Display', serif;">
+          Faculty Coordinator
+      </h3>
+
+      <p class="mt-3 text-[#64748B]">
+          Contact details will be updated soon.
+      </p>
+
+    </div>
+
+    <!-- Student -->
+    <div class="bg-white rounded-[24px] border border-[#E5E7EB] shadow-lg p-10 text-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+
+      <div class="w-20 h-20 mx-auto rounded-full bg-[#ECFDF5] flex items-center justify-center text-4xl mb-6">
+        🎓
+      </div>
+
+      <h3 class="text-2xl font-bold text-[#0F766E]"
+          style="font-family:'Playfair Display', serif;">
+          Student Coordinator
+      </h3>
+
+      <p class="mt-3 text-[#64748B]">
+          Contact details will be updated soon.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+ <!-- ================= MAP SECTION ================= -->
+
+<section class="py-20 bg-[#FCFEFD]">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <h2
+            class="text-center text-5xl font-black mb-4"
+            style="
+                font-family:'Playfair Display',serif;
+                color:#2563EB;
+            ">
+            📍 BVRIT Narsapur — Campus Location
+        </h2>
+
+        <p class="text-center text-[#64748B] text-lg mb-10">
+            B V Raju Institute of Technology, Narsapur, Telangana, India
+        </p>
+
+        <!-- Google Map -->
+        <div
+            class="overflow-hidden rounded-[30px] border border-[#E5E7EB]"
+            style="box-shadow:0 20px 50px rgba(15,118,110,.15);">
+
+            <iframe
+                title="BVRIT Narsapur Map"
+                src="https://maps.google.com/maps?q=BVRIT%20Narsapur&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="650"
+                style="border:0;display:block;"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer
+class="mt-20 text-white"
+style="background:#0F172A;">
+
+<div class="max-w-7xl mx-auto px-8 py-16 grid md:grid-cols-4 gap-12">
+
+<!-- Logo -->
+
+<div>
+
+<h3
+class="text-3xl font-black"
+style="
+font-family:'Playfair Display',serif;
+color:#14B8A6;
+">
+
+ICASIS 2027
+
+</h3>
+
+<p class="mt-5 text-gray-400 leading-8">
+
+International Conference on
+Advanced Computing,
+Artificial Intelligence &
+Smart Information Systems.
+
+</p>
+
+<p class="mt-6 text-gray-500">
+
+B V Raju Institute of Technology
+
+<br>
+
+Narsapur,
+Telangana,
+India
+
+</p>
+
+</div>
+
+<!-- Quick Links -->
+
+<div>
+
+<h4 class="text-xl font-bold mb-5 text-white">
+
+Quick Links
+
+</h4>
+
+<ul class="space-y-3 text-gray-400">
+
+<li><a href="#" class="hover:text-[#14B8A6] transition">Home</a></li>
+
+<li><a href="#" class="hover:text-[#14B8A6] transition">Committee</a></li>
+
+<li><a href="#" class="hover:text-[#14B8A6] transition">Registration</a></li>
+
+<li><a href="#" class="hover:text-[#14B8A6] transition">Authors</a></li>
+
+<li><a href="#" class="hover:text-[#14B8A6] transition">Venue</a></li>
+
+<li><a href="#" class="hover:text-[#14B8A6] transition">Travel</a></li>
+
+</ul>
+
+</div>
+
+<!-- Conference -->
+
+<div>
+
+<h4 class="text-xl font-bold mb-5 text-white">
+
+Conference
+
+</h4>
+
+<ul class="space-y-3 text-gray-400">
+
+<li><a href="#" class="hover:text-[#14B8A6] transition">Program Schedule</a></li>
+
+<li><a href="#" class="hover:text-[#14B8A6] transition">Important Dates</a></li>
+
+<li><a href="#" class="hover:text-[#14B8A6] transition">Accommodation</a></li>
+
+<li><a href="#" class="hover:text-[#14B8A6] transition">Special Sessions</a></li>
+
+<li><a href="#" class="hover:text-[#14B8A6] transition">Sponsors</a></li>
+
+</ul>
+
+</div>
+
+<!-- Contact -->
+
+<div>
+
+<h4 class="text-xl font-bold mb-5 text-white">
+
+Contact Us
+
+</h4>
+
+<p class="text-gray-400 leading-8">
+
+📍 BVRIT,
+Narsapur,
+Telangana
+
+</p>
+
+<p class="mt-4 text-gray-400">
+
+📧 info@icasis2027.org
+
+</p>
+
+<p class="mt-2 text-gray-400">
+
+☎ +91 XXXXX XXXXX
+
+</p>
+
+<p class="mt-6">
+
+<a href="#" class="inline-block px-6 py-3 rounded-xl font-semibold text-white"
+style="background:#2563EB;">
+
+Contact Organizers
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Bottom -->
+
+<div class="border-t border-gray-700">
+
+<div class="max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row justify-between items-center">
+
+<p class="text-gray-500">
+
+© 2027 ICASIS. All Rights Reserved.
+
+</p>
+
+<p class="text-gray-500 mt-3 md:mt-0">
+
+Designed with ❤️ for ICASIS 2027
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>

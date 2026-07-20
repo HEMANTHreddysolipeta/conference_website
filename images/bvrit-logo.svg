@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" role="img" aria-label="BVRIT logo">
-  <rect width="320" height="160" rx="20" fill="#F8FAFC"/>
-  <rect x="24" y="24" width="272" height="112" rx="14" fill="#0F766E"/>
-  <path d="M84 108V56h34c16 0 28 7 28 25 0 17-12 27-28 27h-18v0h18c10 0 18-5 18-14 0-8-8-14-18-14h-16v0h16c13 0 22 6 22 16 0 10-9 17-22 17H84z" fill="#FFFFFF"/>
-  <path d="M168 108V56h22c19 0 31 10 31 26 0 17-12 26-31 26h-22zm18-16h4c10 0 15-6 15-14 0-8-5-14-15-14h-4v28z" fill="#FFFFFF"/>
-</svg>

@@ -107,3 +107,164 @@ function closeCardOverlay(card, btn){
 	// clear any inline positioning
 	try{ card.style.top=''; card.style.left=''; card.style.width=''; card.style.height=''; }catch(e){}
 }
+
+/* ===========================================
+   Committee Cards
+=========================================== */
+
+const committeeCards = document.querySelectorAll(".committee-accordion");
+
+committeeCards.forEach(card=>{
+
+    const header = card.querySelector(".committee-header");
+
+    header.addEventListener("click",()=>{
+
+        // Close every other card
+        committeeCards.forEach(c=>{
+            if(c!==card){
+                c.classList.remove("active");
+            }
+        });
+
+        // Toggle current card
+        card.classList.toggle("active");
+
+    });
+
+});
+
+
+/* ===========================================
+   EXPLORE CAROUSEL
+=========================================== */
+
+const track = document.querySelector(".ribbon-track");
+
+const slides = [...document.querySelectorAll(".ribbon-card")];
+
+const pins = [
+
+    document.querySelector(".pin.charminar"),
+    document.querySelector(".pin.golconda"),
+    document.querySelector(".pin.salarjung"),
+    document.querySelector(".pin.chowmahalla"),
+    document.querySelector(".pin.tankbund"),
+    document.querySelector(".pin.ramoji")
+
+];
+
+const prevBtn = document.querySelector(".carousel-nav.left");
+const nextBtn = document.querySelector(".carousel-nav.right");
+
+let currentSlide = 0;
+
+function showSlide(index){
+
+    currentSlide = index;
+
+    // Move the whole ribbon
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    // Glow active pin
+    pins.forEach(pin => pin.classList.remove("active"));
+    pins[currentSlide].classList.add("active");
+
+}
+
+// Next
+nextBtn.addEventListener("click",()=>{
+
+    currentSlide++;
+
+    if(currentSlide >= slides.length){
+
+        currentSlide = 0;
+
+    }
+
+    showSlide(currentSlide);
+
+});
+
+// Previous
+prevBtn.addEventListener("click",()=>{
+
+    currentSlide--;
+
+    if(currentSlide < 0){
+
+        currentSlide = slides.length - 1;
+
+    }
+
+    showSlide(currentSlide);
+
+});
+
+// Auto play
+setInterval(()=>{
+
+    currentSlide++;
+
+    if(currentSlide >= slides.length){
+
+        currentSlide = 0;
+
+    }
+
+    showSlide(currentSlide);
+
+},5000);
+
+// Initial
+showSlide(0);
+
+slides[0].classList.add("active");
+
+/* Advisory Accordion */
+
+document.querySelectorAll(".advisory-card").forEach(card=>{
+
+    card.querySelector(".advisory-header").onclick=()=>{
+
+        card.classList.toggle("active");
+
+    };
+
+});
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click",()=>{
+
+    navLinks.classList.toggle("active");
+
+});
+
+//dropdown
+
+document.querySelectorAll(".dropdown").forEach(dropdown => {
+
+    let timer;
+
+    dropdown.addEventListener("mouseenter", () => {
+
+        clearTimeout(timer);
+
+        dropdown.classList.add("open");
+
+    });
+
+    dropdown.addEventListener("mouseleave", () => {
+
+        timer = setTimeout(() => {
+
+            dropdown.classList.remove("open");
+
+        },250);
+
+    });
+
+});
