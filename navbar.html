@@ -1,39 +1,27 @@
 <nav>
-
     <a href="index.html#hero" class="nav-brand">
-        <img src="images/logo1.png" class="nav-logo">
-
-     <div class="nav-brand-text">
-
-        <h2>ICASIS</h2>
-
-        <span>International Conference</span>
-
-     
-
+        <img src="images/logo1.png" class="nav-logo" alt="ICASIS logo">
+        <div class="nav-brand-text">
+            <h2>ICASIS</h2>
+            <span>International Conference</span>
         </div>
-
     </a>
-     <ul class="nav-links">
 
+    <ul class="nav-links">
+        <li><a href="index.html#hero">Home</a></li>
         <li><a href="index.html#about">About</a></li>
-
         <li><a href="index.html#call">Tracks</a></li>
-
         <li><a href="index.html#committee">Committee</a></li>
-
         <li><a href="speakers.html">Speakers</a></li>
-
-        <li><a href="index.html#dates">Schedule</a></li>
+        <li><a href="index.html#dates">Dates</a></li>
 
         <li class="dropdown">
             <a href="#venue">
                 Venue
                 <i class="fa-solid fa-chevron-down"></i>
             </a>
-
             <ul class="dropdown-menu">
-                <li><a href="index.html#venue">Venue</a></li>
+                <li><a href="index.html#contact">Venue</a></li>
                 <li><a href="index.html#explore">Explore Hyderabad</a></li>
                 <li><a href="travel.html">How to Reach</a></li>
             </ul>
@@ -41,10 +29,15 @@
 
         <li><a href="index.html#contact">Contact</a></li>
 
-     </ul>
+        <li class="nav-action-group">
+            <div class="nav-actions">
+                <a href="submit-paper.html" class="btn primary">Submit Paper</a>
+                <a href="registration.html" class="btn secondary">Register</a>
+            </div>
+        </li>
+    </ul>
 
-        <div class="menu-toggle" id="menuToggle">
-              ☰
-        </div>
-
-        </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</nav>

@@ -9,6 +9,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="responsive.css?v=1">
 
     <link
 rel="stylesheet"
@@ -18,56 +19,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 <body>
     
 
-<nav>
-
-    <a href="#hero" class="nav-brand">
-        <img src="images/logo1.png" class="nav-logo">
-
-     <div class="nav-brand-text">
-
-        <h2>ICASIS</h2>
-
-        <span>International Conference</span>
-
-     
-
-        </div>
-
-    </a>
-     <ul class="nav-links">
-
-        <li><a href="#about">About</a></li>
-
-        <li><a href="#call">Tracks</a></li>
-
-        <li><a href="#committee">Committee</a></li>
-
-        <li><a href="speakers.html">Speakers</a></li>
-
-        <li><a href="#dates">Schedule</a></li>
-
-        <li class="dropdown">
-            <a href="#venue">
-                Venue
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
-
-            <ul class="dropdown-menu">
-                <li><a href="#venue">Venue</a></li>
-                <li><a href="#explore">Explore Hyderabad</a></li>
-                <li><a href="travel.html">How to Reach</a></li>
-            </ul>
-        </li>
-
-        <li><a href="#contact">Contact</a></li>
-
-     </ul>
-
-        <div class="menu-toggle" id="menuToggle">
-              ☰
-        </div>
-
-        </nav>
+<div id="navbar"></div>
 
 
 
@@ -129,11 +81,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <div class="buttons">
 
-            <a href="#registration" class="btn primary">
+            <a href="submit-paper.html" class="btn primary">
                 Submit Paper
             </a>
 
-            <a href="#contact" class="btn secondary">
+            <a href="registration.html" class="btn secondary">
                 Register
             </a>
 
@@ -147,7 +99,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <!-- ===========================
 
-    <!-- ===========================
+    ===========================
          ABOUT (Redesigned)
     =========================== -->
 
@@ -441,7 +393,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
                 <div class="timeline-dot"></div>
 
-                <h4>30 June 2026</h4>
+                <h4>05 August 2026</h4>
 
                 <p>
 
@@ -467,7 +419,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
                 <div class="timeline-dot"></div>
 
-                <h4>30 September 2026</h4>
+                <h4>15 November 2026</h4>
 
                 <p>
 
@@ -495,7 +447,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
                 <div class="timeline-dot"></div>
 
-                <h4>20 November 2026</h4>
+                <h4>30 November 2026</h4>
 
                 <p>
 
@@ -521,7 +473,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
                 <div class="timeline-dot"></div>
 
-                <h4>30 November 2026</h4>
+                <h4>31 December 2026</h4>
 
                 <p>
 
@@ -549,7 +501,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
                 <div class="timeline-dot"></div>
 
-                <h4>30 December 2026</h4>
+                <h4>31 January 2027</h4>
 
                 <p>
 
@@ -1724,12 +1676,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             <div class="contact-row">
                 <div class="tile small">
                     <h3>Email</h3>
-                    <p>icetcs2026@bvrit.ac.in</p>
+                    <p>icasis@bvrit.ac.in</p>
                 </div>
 
                 <div class="tile small">
                     <h3>Phone</h3>
-                    <p>+91 9XXXXXXXXX</p>
+                    <p>+91 7373449798</p>
                 </div>
             </div>
 
@@ -1758,7 +1710,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 
 <footer>
-© 2027 ICASIS | Department of Computer Science | BV Raju Institute of Technology
+© 2027 ICASIS | Department of Computer Science and Engineering | BV Raju Institute of Technology
 </footer>
             
 
@@ -1769,5 +1721,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     <div class="blur three"></div>
 
     <script src="script.js"></script>
+
+
+    <script>
+window.addEventListener("DOMContentLoaded", () => {
+    if (window.location.hash === "#submission") {
+        window.location.replace("submission.html");
+    }
+});
+</script>
 </body>
 </html>

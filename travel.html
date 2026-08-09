@@ -12,6 +12,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+
+<script>
+tailwind.config = {
+    corePlugins: {
+        preflight: false,
+    },
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
@@ -82,83 +90,14 @@ box-shadow:0 18px 40px rgba(15,118,110,.12);
 </style>
 
 </head>
-<body class="bg-white text-slate-800" style="margin-top: 70px;">
 
-  <!-- Inline Navbar -->
-  <nav>
+<body class="bg-white text-slate-800">
 
-    <a href="index.html#hero" class="nav-brand">
-        <img src="images/logo1.png" class="nav-logo">
+  <div id="navbar"></div>
 
-     <div class="nav-brand-text">
 
-        <h2>ICASIS</h2>
 
-        <span>International Conference</span>
-
-        </div>
-
-    </a>
-     <ul class="nav-links">
-
-        <li><a href="index.html#about">About</a></li>
-
-        <li><a href="index.html#call">Tracks</a></li>
-
-        <li><a href="index.html#committee">Committee</a></li>
-
-        <li><a href="speakers.html">Speakers</a></li>
-
-        <li><a href="index.html#dates">Schedule</a></li>
-
-        <li class="dropdown">
-            <a href="#venue">
-                Venue
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
-
-            <ul class="dropdown-menu">
-                <li><a href="index.html#venue">Venue</a></li>
-                <li><a href="index.html#explore">Explore Hyderabad</a></li>
-                <li><a href="travel.html">How to Reach</a></li>
-            </ul>
-        </li>
-
-        <li><a href="index.html#contact">Contact</a></li>
-
-     </ul>
-
-        <div class="menu-toggle" id="menuToggle">
-              ☰
-        </div>
-
-        </nav>
-
-  <script>
-  // Mobile Menu Toggle
-  const menuToggle = document.getElementById("menuToggle");
-  const navLinks = document.querySelector(".nav-links");
-
-  if(menuToggle && navLinks){
-      menuToggle.addEventListener("click", () => {
-          navLinks.classList.toggle("active");
-      });
-  }
-
-  // Dropdown hover
-  document.querySelectorAll(".dropdown").forEach(dropdown => {
-      let timer;
-      dropdown.addEventListener("mouseenter", () => {
-          clearTimeout(timer);
-          dropdown.classList.add("open");
-      });
-      dropdown.addEventListener("mouseleave", () => {
-          timer = setTimeout(() => {
-              dropdown.classList.remove("open");
-          },250);
-      });
-  });
-  </script>
+  
 <!-- ================= HERO ================= -->
 
 <section
@@ -1014,13 +953,13 @@ Telangana
 
 <p class="mt-4 text-gray-400">
 
-📧 info@icasis2027.org
+📧 icasis@bvrit.ac.in
 
 </p>
 
 <p class="mt-2 text-gray-400">
 
-☎ +91 XXXXX XXXXX
+☎ +91 7373449798
 
 </p>
 
@@ -1038,6 +977,74 @@ Contact Organizers
 </div>
 
 </div>
+
+
+
+<!--Styling for navbar  -->
+<style>
+/* ===========================
+   TRAVEL PAGE NAVBAR FIX
+=========================== */
+
+/* ---------- Travel page navbar only ---------- */
+
+#navbar nav{
+    width:98%;
+    max-width:none;
+    padding:0 18px;
+}
+
+#navbar .nav-brand{
+    flex-shrink:0;
+}
+
+#navbar .nav-links{
+    gap:10px !important;
+}
+
+#navbar .nav-links a{
+    padding:8px 8px !important;
+    font-size:.90rem;
+}
+
+#navbar .nav-action-group{
+    margin-left:10px;
+}
+
+#navbar .nav-actions{
+    gap:8px;
+}
+
+#navbar .nav-actions .btn{
+    padding:8px 16px;
+    font-size:0.9rem;
+    white-space:nowrap;
+}
+
+#navbar .nav-logo{
+    width:130px;
+    height:130px;
+}
+
+#navbar .nav-brand-text{
+    margin-left:-55px;
+}
+
+#navbar .nav-brand-text h2{
+    margin-top:-3px;
+}
+
+#navbar .nav-brand-text span{
+    margin-top:4px;
+
+
+}
+html,
+body{
+    overflow-x:hidden;
+}
+</style>
+
 
 <!-- Bottom -->
 
@@ -1062,6 +1069,8 @@ Designed with ❤️ for ICASIS 2027
 </div>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

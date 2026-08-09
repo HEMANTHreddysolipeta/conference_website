@@ -1,0 +1,102 @@
+/* ==========================
+   SUBMISSION HERO
+========================== */
+
+.submission-hero{
+    height:300px;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction:column;
+
+    text-align:center;
+
+    padding-top:110px;
+
+    background:url("images/bg.png") center/cover no-repeat;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.submission-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.25);
+}
+
+.submission-hero .hero-content{
+    position:relative;
+    z-index:2;
+
+    max-width:800px;
+}
+
+.submission-hero h1{
+    color:#fff;
+    font-size:3.1rem;
+    margin-bottom:18px;
+
+    font-family:'Playfair Display', serif;
+}
+
+.submission-hero p{
+    color:rgba(255,255,255,.95);
+    font-size:1.15rem;
+    line-height:1.8;
+}
+
+
+/* ==========================
+   CMT ACKNOWLEDGEMENT
+========================== */
+
+.cmt-acknowledgement{
+
+    width:min(900px,90%);
+
+    margin:40px auto 80px;
+
+    padding:40px;
+
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+
+    border:1px solid rgba(15,118,110,.15);
+
+    border-radius:24px;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.08),
+        inset 0 1px 0 rgba(255,255,255,.7);
+
+    text-align:left;
+}
+
+.cmt-acknowledgement h3{
+
+    margin:0 0 22px;
+
+    color:#0F766E;
+
+    font-size:2rem;
+
+    font-weight:700;
+}
+
+.cmt-acknowledgement p{
+
+    margin:0;
+
+    color:#475569;
+
+    line-height:1.9;
+
+    font-size:1.08rem;
+}
